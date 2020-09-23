@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta property="og:title" content="KOU Duyuru Bildirimleri" />
+    <meta
+      property="og:description"
+      content="Her gün duyuruları kontrol etmekten sıkıldın mı? Senin yerine biz kontrol edip sana bildirim yollayalım."
+    />
+    <meta property="og:url" content="https://kou.xava.me/" />
+    <meta property="og:image" content="https://kou.xava.me/og.png" />
+    <title>KOUDB</title>
+    <style>
+      @media screen and (max-width: 769px) {
+        h5 {
+          display: none;
+        }
+      }
+      * {
+        margin: 20px;
+        background: #282c2f;
+        color: white;
+        font-family: 'Courier New', Courier, monospace !important;
+        box-shadow: none !important;
+        text-transform: lowercase !important;
+      }
+      .onesignal-customlink-subscribe.button.state-unsubscribed {
+        background: #2196f3 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h5>
+      >>><br />
+      >>><br />
+      >>><br />
+      >>><br />
+      >>><br />
+      >>><br />
+    </h5>
+    <h1>kou duyuru bildirimleri</h1>
+    <h2>her gün duyuruları kontrol etmekten sıkıldın mı?</h2>
+    <h3>
+      bildirimlere izin ver, senin yerine biz kontrol edip sana bildirim
+      yollayalım.
+    </h3>
+    <h4>sana duyuru harici bildirim atmayacağımıza söz veriyoruz.</h4>
+    <div class="onesignal-customlink-container">yükleniyor...</div>
+    <br />
+    <p>takip et:</p>
+    <a href="https://github.com/atagulalan">github</a>
+    <a href="https://twitter.com/atagulalan">twitter</a>
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
+    <script>
+      var OneSignal = window.OneSignal || []
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: '8e8fef89-7648-46fe-9fb1-4a38952b6e75',
+          welcomeNotification: {
+            title: 'Ekledim seni',
+            message:
+              'Bundan sonra duyuru atıldığında bunun gibi bildirimler göreceksin. Hayırlı olsun.'
+          },
+          promptOptions: {
+            customlink: {
+              enabled: true /* Required to use the Custom Link */,
+              text: {
+                subscribe:
+                  'gönder gelsin' /* Prompt's text when not subscribed */,
+                unsubscribe:
+                  'vazgeçtim, istemiyorum' /* Prompt's text when subscribed */
+              },
+              unsubscribeEnabled: true /* Controls whether the prompt is visible after subscription */
+            }
+          }
+        })
+        OneSignal.showNativePrompt()
+      })
+    </script>
+  </body>
+</html>

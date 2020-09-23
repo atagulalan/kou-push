@@ -1,0 +1,20 @@
+{
+  "name": "kou-push",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crawler": "^1.2.1",
+    "cron": "^1.7.2",
+    "jsdom": "^15.1.1",
+    "lowdb": "^1.0.0",
+    "onesignal-node": "^2.1.1",
+    "telegraf": "^3.38.0"
+  }
+}
