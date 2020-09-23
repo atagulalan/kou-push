@@ -4,6 +4,9 @@ her gün duyuruları kontrol etmekten sıkıldın mı?
 bildirimlere izin ver, senin yerine biz kontrol edip sana bildirim yollayalım.
 sana duyuru harici bildirim atmayacağımıza söz veriyoruz.
 
+# Telegram Duyuru Linki
+https://t.me/kou_duyuru
+
 ## Başlangıç
 Bu talimatlar, geliştirme ve test amacıyla yerel makinenizde çalışır durumda olan projenin bir kopyasını size verecektir. Projenin canlı bir sistemde nasıl dağıtılacağına ilişkin notlar için dağıtıma bakın.
 
